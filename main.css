@@ -1,0 +1,80 @@
+body{
+    background-image: linear-gradient(green, rgb(1, 34, 3));
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+    background-color: black;
+    background-image: linear-gradient(green, yellow);
+
+}
+
+h1{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    color:yellowgreen;
+}
+
+table{
+     border-radius: 0rem;
+     margin: 5px 20px;
+     background-color: rgb(1, 34, 3);
+}
+
+th, td{
+    background-color: white;
+    /* background-image: linear-gradient(red,blue); */
+    padding: 0.5rem;
+    margin: 1rem ;
+}
+
+th{
+    font-weight: bolder;
+    color: green;
+    background-color: pink;
+}
+
+label{
+    margin: auto;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+input{
+    border-radius: 0.5rem;
+    border-width: 0px;
+    padding: 0.8rem;
+    width: 30%;
+    margin: auto;
+}
+
+button{
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    width: 5rem;
+    margin-top: 0.8rem;
+    font-weight: bold;
+   
+}
+
+caption{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+p{
+    margin-left: 1rem;
+    
+}
+
