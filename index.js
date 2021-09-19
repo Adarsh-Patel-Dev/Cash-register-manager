@@ -2,6 +2,9 @@ const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const message = document.querySelector("#error-message");
 
+
+
+
 const checkButton = document.querySelector("#check-button");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
