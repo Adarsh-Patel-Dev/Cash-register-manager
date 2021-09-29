@@ -20,16 +20,25 @@ nextButton.addEventListener("click", ()=> {
             nextButton.style.display = "none";
             cashGivenDiv.style.display = "block";
         }
-        else{
+        else {
             showMessage("Enter valid bill amount 🙄");
         }
-    } 
+    }  else if (billAmount.value === "" ) {
+        showMessage("Please enter bill amount");
+        changeReturnDiv.style.display = "none";
+
+     }
     // showMessage("Please enter  valid bill amount");
 })
 
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
 
     hideMessage();
+
+    if(billAmount.value === "" || cashGiven.value === " "){
+         showMessage("Please enter both the values");
+         changeReturnDiv.style.display = "none";
+    }
 
     if (billAmount.value > 0) {
         if (Number(cashGiven.value) > Number(billAmount.value)) {
@@ -43,8 +52,9 @@ checkButton.addEventListener("click", function validateBillAndCashAmount() {
             billAmount.value = " ";
             cashGiven.value = " ";
 
-        } else if (cashGiven.value === "" ) {
+        }else if (cashGiven.value === "" ) {
             showMessage("Please enter amount of cash");
+
          } else if(cashGiven.value == billAmount.value){
              showMessage("No amount should be returned");
          }
